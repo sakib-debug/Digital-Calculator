@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Document </title>
+<link rel="stylesheet" href="calculator.css">
+	
+<style type="text/css">
+   body {
+   margin: 12px;
+   padding-left: 12px;
+   }
+   
+   input[type=button]{
+   background-color: black;
+   
+   color:white;
+   width:62px;
+   height : 44px ;
+   padding:1px;
+   font-size:22px;
+   border-radius:15px;
+   box-shadow: 10px 10px #888888;
+   }
+	
+	table{
+	background-color: #9e8fb2;
+	background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
+	border-color: pink ;
+	border-radius:5px;
+	box-shadow: 2px 12px #888888;
+	border:8px;
+	width: 12px ;
+	height: 34px ;
+	}
+   
+
+   p{
+   margin-top: -2px;
+   text-align: center ;
+   font-size : 22px ;
+   font-family: 'serif';
+   }
+   
+</style>
+	
+</head>
+<body>
+	   
+<form name="calculator">
+<table
+cellpadding="6"
+cellspacing="10">
+
+<tr>
+<td colspan="7">
+<input type="text" name="display"id="display"placeholder="00" style="font-size:22px;height:90px;background-color:lightgreen;border-radius:15px;">		 
+<br>
+</tr>
+ 
+<tr>
+<td><input  style="background-color:orange;" type="button" name="clear" value="C" id="clear" onclick="calculator.display.value = ''; navigator.vibrate(100)"></td>
+<td><input type="button" name="divide" value="/" onclick="calculator.display.value += '/'; navigator.vibrate(100) "id="operator"></td>
+<td><input type="button" name="%" value="%" onclick="calculator.display.value +='%';navigator.vibrate(100)"/></td>
+<td><input type="button" name="del" value="del" onclick="calculator.display.value = (calculator.display.value).substring(0, (calculator.display.value).length-1); navigator.vibrate(100)"></td>
+</tr>
+
+
+<tr>
+<td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'; navigator.vibrate(100)"></td>
+<td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'; navigator.vibrate(100)"></td>
+<td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'; navigator.vibrate(100)"></td>
+
+
+<td><input type="button" name="multiply" value="" onclick="calculator.display.value += ''; navigator.vibrate(100)" id="operator"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'; navigator.vibrate(100)"></td>
+<td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'; navigator.vibrate(100)"></td>
+<td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'; navigator.vibrate(100)"></td>
+<td><input type="button" name="minus" value="-" id="operator" onclick="calculator.display.value += '-'; navigator.vibrate(100)"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'; navigator.vibrate(100)"></td>
+<td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'; navigator.vibrate(100)"></td>
+<td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'; navigator.vibrate(100)"></td>
+<td><input type="button" id="operator" name="plus" value="+" onclick="calculator.display.value += '+'; navigator.vibrate(100)"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="dz" value="00" onclick="calculator.display.value +='00'; navigator.vibrate(100)"/></td>
+</td>
+<td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'; navigator.vibrate(100)"></td>
+<td><input type="button" name="dp" value="." onclick="calculator.display.value += '.'; navigator.vibrate(100)"></td>
+<td><input style="background-color:green;" type="button" name="calc" value="=" onclick="calculator.display.value = eval(calculator.display.value); navigator.vibrate(100)"></td>
+</tr>	
+
+<br><br>
+</table></form>
+<br><br><br>
+   
+<script>
+   alert("Please upvote if you like it 👍🏻")</script>
+</body>
+</html>
